@@ -1,4 +1,4 @@
-<h2>Couse List</h2>
+<h2>Course List</h2>
 
 <div class="form-group row">
   <label class="col-sm-2 col-form-label">Filter By:</label>
@@ -29,7 +29,12 @@
       <td>
         <app-star [rating]="course.rating"></app-star>
       </td>
-      <td></td>
+      <td>
+        <!-- chamaos o routerLink para acessar uma rota, passando em um array
+        dois parametro, o primeiro é a url e o segundo os parametros que vamos passar
+        pela rota -->
+        <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary">Edit</a>
+      </td>
     </tr>
   </tbody>
 </table>
