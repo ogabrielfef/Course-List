@@ -1,13 +1,13 @@
 export class Course {
   id;
   name;
-  imageUrl;
-  price;
-  code;
-  duration;
-  rating;
   releaseDate;
   description;
+  duration;
+  code;
+  rating;
+  price;
+  imageUrl;
 
   constructor(id: number, name: string, imageUrl: string,
     price: number, code: string, duration: number,
